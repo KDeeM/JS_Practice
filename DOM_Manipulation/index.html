@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DOM Manipulator</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nova+Mono&family=Roboto:wght@300&display=swap"
+  rel="stylesheet">
+
+  <!-- CSS custom styles -->
+  <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+  <main class="content">
+    <div class="content-container">
+      
+      <!-- Section Intro -->
+      <section class="intro">
+        <h1 class="header main-header">DOM Manipulation</h1>
+        <p class="sect-par">
+          The DOM(Document Object Model) is a JavaScript object representing the format
+          and structure of the HTML content, this means any changes made in the DOM are
+          reflected in the HTML content itself.
+        </p>
+        <p class="sect-par">
+          The DOM can thus be used to add, alter and remove elements on your page, with
+          the added support of other JavaScript capabilities such as Http Requests,
+          webpages can become dynamic able to even fetch content without the need for
+          page refreshing. Knowledge of the DOM can thus be a powerful tool to learn.
+        </p>
+      </section>
+      <br />
+
+      <!-- Section 1: Altering -->
+      <section class="sect-altering">
+        <h2 class="header sub-header">Altering Content</h2>
+        <p class="sect-par">
+          Using the DOM we can alter different aspects of our HTML document, from the
+          CSS styles to the content and even attributes. The DOM gives us the tools
+          to access these and JavaScript allows us to make changes to them.
+        </p>
+        <div class="code-snippet">
+          <ol class="code-group">
+            <li>document.body.style.background = "red";</li>
+            <li>setTimeout(</li>
+            <li>&nbsp; () => {document.body.style.color = "";},</li>
+            <li>&nbsp;  2500</li>
+            <li>)</li>
+          </ol>
+          <div id="alter1" class="code-action btn">Try It</div>
+        </div>
+      </section>
+
+      <!-- Section 2: Selection -->
+      <section class="sect-selection">
+        <h2 class="header sub-header">The DOM Tree</h2>
+      </section>
+    </div>
+  </main>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

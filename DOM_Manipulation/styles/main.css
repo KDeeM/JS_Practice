@@ -1,0 +1,26 @@
+@import url("clearfix.css");
+@import url("base.css");
+
+body{
+  font-family: var(--ft-lato);
+}
+
+/* 
+  STYLES FOR MAIN CONTAINER
+*/
+main{
+  position: relative;
+  width: 100vw;
+}
+main .content-container{
+  position: relative;
+  margin: auto;
+  width: 90vw;
+  max-width: 1980px;
+}
+
+/* 
+  STYLES FOR INTRO SECTION
+*/
+
+

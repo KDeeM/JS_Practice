@@ -1,0 +1,106 @@
+/* 
+  BASE CSS FILE
+  * This file holds reused styles and variables
+*/
+body{
+  --ft-lato: 'Lato', sans-serif;
+  --ft-roboto: 'Roboto', sans-serif;
+  --ft-nova: 'Nova Mono', monospac;
+
+  --col-grey: #4e4e4e;
+  --col-light-grey: #c0c0c0;
+  --col-lighter-grey: #e4e4e4;
+}
+
+/* 
+  HEADER STYLES (H1-H6)
+*/
+
+.header{
+  font-family: var(--ft-roboto);
+  letter-spacing: .05rem;
+  text-decoration: underline;
+  color: var(--col-grey);
+}
+.main-header{
+  margin: 2rem 0rem 1rem;
+  font-size: 2.5rem;
+}
+.sub-header{
+  margin: 1rem 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+/* 
+  BUTTON STYLES
+*/
+
+.btn{
+  width: fit-content;
+  padding: .25rem 1rem;
+  font-family: var(--ft-roboto);
+  font-size: 1rem;
+  font-weight: 600;
+  border: .1rem solid black;
+  border-radius: .5rem;
+}
+
+/* 
+  PARAGRAPH STYLES
+*/
+
+/* The explanatory paragraphs in the sections */
+.sect-par{
+  margin: 0rem auto 1rem;
+  padding: 0rem 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+.sect-par::first-letter{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/* 
+  ILLUSTRATED CODE STYLES
+*/
+.code-snippet{
+  --ind-size: 2em; 
+
+  font-family: var(--ft-nova);
+  font-size: 1rem;
+  border: .2rem solid var(--col-grey);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.code-snippet > *{
+  margin: 0 0 1rem;
+}
+.code-group{
+  padding: 10rem 1rem;
+  color: var(--col-grey);
+  padding: .5rem;
+  background-color: var(--col-lighter-grey);
+  border-width: 0 0 .2rem;
+  border-style: solid;
+  border-color: var(--col-grey);
+  list-style-position: inside;
+}
+.code-action{
+  margin-left: 1rem;
+  border-color: var(--col-grey);
+  background-color: var(--col-light-grey);
+  cursor: pointer;
+}
+.ind-1{
+  text-indent: calc(var(--ind-size) * 1);
+}
+.ind-2{
+  text-indent: calc(var(--ind-size) * 2);
+}
+.ind-3{
+  text-indent: calc(var(--ind-size) * 3);
+}
+.ind-4{
+  text-indent: calc(var(--ind-size) * 4);
+}
